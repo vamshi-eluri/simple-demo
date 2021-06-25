@@ -24,7 +24,7 @@ public class SelectPetServlet{
     private PetService petService;
 
     @RequestMapping(value="/SelectPet", method=RequestMethod.POST)
-    protected ModelAndView doPost(@Valid @ModelAttribute("pet") Pet pet) {
+    protected ModelAndView doPost(@ModelAttribute("pet") Pet pet) {
 
         ModelAndView view = new ModelAndView();
         view.setViewName("result");
